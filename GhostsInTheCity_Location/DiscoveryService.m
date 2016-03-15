@@ -59,7 +59,7 @@
     self.serviceBrowser = [[NSNetServiceBrowser alloc] init];
     self.serviceBrowser.delegate = self;
     
-    self.title = @"Discovery Service";
+    self.title = @"Searching Service";
     [self searchForBonjourServices];
 }
 
@@ -100,6 +100,10 @@
     }
     
     cell.textLabel.text = displayString;
+    cell.backgroundColor = [UIColor colorWithRed:51 green:51 blue:51 alpha:0];
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    
     return cell;
 }
 

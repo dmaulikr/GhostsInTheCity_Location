@@ -15,18 +15,30 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (weak, nonatomic) IBOutlet UILabel *latitudeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *longitudeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lastUpdateLabel;
 @property (strong, nonatomic) GCDAsyncSocket *socket;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activity_indicator;
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UILabel *errorLabel;
 
 @end
 
-@implementation LocationViewController
+@implementation LocationViewController {
+    NSDateFormatter *formatter;
+    NSString *dateString;
+    NSTimer *lastUpdateTimer;
+    NSTimeInterval lastUpdateTimeInterval;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.latitudeLabel setText:@""];
-    [self.longitudeLabel setText:@""];
+    [self.latitudeLabel setText:@"..."];
+    [self.longitudeLabel setText:@"..."];
+    
+    formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"HH:mm:ss"];
     
     self.locationManager = [[CLLocationManager alloc] init];
     
@@ -45,13 +57,15 @@
 }
 - (IBAction)start_sending_location:(id)sender {
     
+    self.activity_indicator.hidden = NO;
+    self.startButton.hidden = YES;
+    
     self.socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     
     NSError *err = nil;
-    if (![self.socket connectToHost:self.address_selected onPort:8080 error:&err]) // Asynchronous!
+    if (![self.socket connectToHost:self.address_selected onPort:8080 withTimeout:10000 error:&err]) // Asynchronous!
     {
-        // If there was an error, it's likely something like "already connected" or "no delegate set"
-        NSLog(@"Error Socket: %@", err);
+        self.errorLabel.text = [NSString stringWithFormat:@"%@", err];
     }
 }
 
@@ -78,6 +92,14 @@
     NSLog(@"didUpdateToLocation: %@", newLocation);
     
     if (newLocation != nil) {
+        
+        lastUpdateTimeInterval = [[NSDate date] timeIntervalSince1970];
+        
+        lastUpdateTimer = [NSTimer scheduledTimerWithTimeInterval: 1.0
+                                                           target: self
+                                                         selector:@selector(onTick:)
+                                                         userInfo: nil repeats:YES];
+        
         self.longitudeLabel.text = [NSString stringWithFormat:@"%.8f", newLocation.coordinate.longitude];
         self.latitudeLabel.text = [NSString stringWithFormat:@"%.8f", newLocation.coordinate.latitude];
         
@@ -85,6 +107,21 @@
         
         [self.socket writeData:location_data withTimeout:-1 tag:1];
     }
+}
+
+-(void) viewWillDisappear:(BOOL)animated {
+    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
+        [self.socket disconnect];
+        [self.locationManager stopUpdatingLocation];
+        [lastUpdateTimer invalidate];
+    }
+    [super viewWillDisappear:animated];
+}
+
+-(void)onTick:(NSTimer *)timer {
+    
+    self.lastUpdateLabel.text = [NSString stringWithFormat:@"%.1f seconds ago", [[NSDate date] timeIntervalSince1970] - lastUpdateTimeInterval];
+    
 }
 
 @end
