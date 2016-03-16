@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activity_indicator;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UILabel *errorLabel;
+@property (weak, nonatomic) IBOutlet MKMapView *locationMap;
 
 @end
 
@@ -49,6 +50,10 @@
     
     // Set a movement threshold for new events.
     self.locationManager.distanceFilter = 1; // meters
+    
+    // Map settings
+    self.locationMap.mapType = MKMapTypeSatellite;
+    self.locationMap.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,6 +70,7 @@
     NSError *err = nil;
     if (![self.socket connectToHost:self.address_selected onPort:8080 withTimeout:10000 error:&err]) // Asynchronous!
     {
+        self.activity_indicator.hidden = YES;
         self.errorLabel.text = [NSString stringWithFormat:@"%@", err];
     }
 }
@@ -102,6 +108,13 @@
         
         self.longitudeLabel.text = [NSString stringWithFormat:@"%.8f", newLocation.coordinate.longitude];
         self.latitudeLabel.text = [NSString stringWithFormat:@"%.8f", newLocation.coordinate.latitude];
+        
+        self.locationMap.showsUserLocation = YES;
+        MKCoordinateRegion region =
+        MKCoordinateRegionMakeWithDistance (
+                                            newLocation.coordinate, 100, 100);
+        [self.locationMap setRegion:region animated:NO];
+        self.locationMap.hidden = NO;
         
         NSData *location_data = [[NSString stringWithFormat:@"%@,%@\r\n",self.latitudeLabel.text,self.longitudeLabel.text] dataUsingEncoding:NSUTF8StringEncoding];
         
