@@ -199,7 +199,6 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="Map" destination="5Iy-G2-wNM" id="pbm-Ef-fWM"/>
                         <outlet property="activity_indicator" destination="LaG-MQ-aUN" id="KAG-uS-lhl"/>
                         <outlet property="errorLabel" destination="seq-2O-k2I" id="wN6-Bq-Dfv"/>
                         <outlet property="lastUpdateLabel" destination="Bvf-RM-JqP" id="vo1-iE-l0V"/>
