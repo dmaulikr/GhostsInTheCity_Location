@@ -84,6 +84,31 @@
     [self.locationManager startUpdatingLocation];
 }
 
+- (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err
+{
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"Lost Socket Connection"
+                                          message:@"The connection with the device is lost."
+                                          preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:NSLocalizedString(@"OK", @"OK action")
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action)
+                               {
+                                   [self.locationManager stopUpdatingLocation];
+                                   [lastUpdateTimer invalidate];
+                                   [self dismissViewControllerAnimated:YES completion:nil];
+                                   
+                               }];
+    
+    [alertController addAction:okAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+
+}
+
 #pragma mark - CLLocationManagerDelegate
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
