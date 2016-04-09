@@ -7,19 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		766569F41C8F0B650016DFF1 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 766569D71C8F0B650016DFF1 /* GCDWebServer.m */; };
-		766569F51C8F0B650016DFF1 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 766569D91C8F0B650016DFF1 /* GCDWebServerConnection.m */; };
-		766569F61C8F0B650016DFF1 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 766569DB1C8F0B650016DFF1 /* GCDWebServerFunctions.m */; };
-		766569F71C8F0B650016DFF1 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 766569DF1C8F0B650016DFF1 /* GCDWebServerRequest.m */; };
-		766569F81C8F0B650016DFF1 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 766569E11C8F0B650016DFF1 /* GCDWebServerResponse.m */; };
-		766569F91C8F0B650016DFF1 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 766569E41C8F0B650016DFF1 /* GCDWebServerDataRequest.m */; };
-		766569FA1C8F0B650016DFF1 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 766569E61C8F0B650016DFF1 /* GCDWebServerFileRequest.m */; };
-		766569FB1C8F0B650016DFF1 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 766569E81C8F0B650016DFF1 /* GCDWebServerMultiPartFormRequest.m */; };
-		766569FC1C8F0B650016DFF1 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 766569EA1C8F0B650016DFF1 /* GCDWebServerURLEncodedFormRequest.m */; };
-		766569FD1C8F0B650016DFF1 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 766569ED1C8F0B650016DFF1 /* GCDWebServerDataResponse.m */; };
-		766569FE1C8F0B650016DFF1 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 766569EF1C8F0B650016DFF1 /* GCDWebServerErrorResponse.m */; };
-		766569FF1C8F0B650016DFF1 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 766569F11C8F0B650016DFF1 /* GCDWebServerFileResponse.m */; };
-		76656A001C8F0B650016DFF1 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 766569F31C8F0B650016DFF1 /* GCDWebServerStreamedResponse.m */; };
 		76656A021C8F15470016DFF1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 76656A011C8F15470016DFF1 /* libz.tbd */; };
 		76656A271C8F187A0016DFF1 /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 76656A061C8F187A0016DFF1 /* Documentation.html */; };
 		76656A281C8F187A0016DFF1 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 76656A081C8F187A0016DFF1 /* GCDAsyncSocket.m */; };
@@ -41,7 +28,6 @@
 		7670A54F1C918F340023FFA9 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7670A54E1C918F340023FFA9 /* LocationViewController.m */; };
 		76F115571C8EEFF000129D2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F115561C8EEFF000129D2A /* main.m */; };
 		76F1155A1C8EEFF000129D2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F115591C8EEFF000129D2A /* AppDelegate.m */; };
-		76F1155D1C8EEFF000129D2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F1155C1C8EEFF000129D2A /* ViewController.m */; };
 		76F115601C8EEFF000129D2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F1155E1C8EEFF000129D2A /* Main.storyboard */; };
 		76F115621C8EEFF000129D2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F115611C8EEFF000129D2A /* Assets.xcassets */; };
 		76F115651C8EEFF000129D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F115631C8EEFF000129D2A /* LaunchScreen.storyboard */; };
@@ -49,34 +35,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		766569D61C8F0B650016DFF1 /* GCDWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
-		766569D71C8F0B650016DFF1 /* GCDWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
-		766569D81C8F0B650016DFF1 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
-		766569D91C8F0B650016DFF1 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
-		766569DA1C8F0B650016DFF1 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFunctions.h; sourceTree = "<group>"; };
-		766569DB1C8F0B650016DFF1 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFunctions.m; sourceTree = "<group>"; };
-		766569DC1C8F0B650016DFF1 /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
-		766569DD1C8F0B650016DFF1 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
-		766569DE1C8F0B650016DFF1 /* GCDWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
-		766569DF1C8F0B650016DFF1 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
-		766569E01C8F0B650016DFF1 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
-		766569E11C8F0B650016DFF1 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
-		766569E31C8F0B650016DFF1 /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataRequest.h; sourceTree = "<group>"; };
-		766569E41C8F0B650016DFF1 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataRequest.m; sourceTree = "<group>"; };
-		766569E51C8F0B650016DFF1 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileRequest.h; sourceTree = "<group>"; };
-		766569E61C8F0B650016DFF1 /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileRequest.m; sourceTree = "<group>"; };
-		766569E71C8F0B650016DFF1 /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
-		766569E81C8F0B650016DFF1 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
-		766569E91C8F0B650016DFF1 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
-		766569EA1C8F0B650016DFF1 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
-		766569EC1C8F0B650016DFF1 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataResponse.h; sourceTree = "<group>"; };
-		766569ED1C8F0B650016DFF1 /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataResponse.m; sourceTree = "<group>"; };
-		766569EE1C8F0B650016DFF1 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
-		766569EF1C8F0B650016DFF1 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
-		766569F01C8F0B650016DFF1 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileResponse.h; sourceTree = "<group>"; };
-		766569F11C8F0B650016DFF1 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileResponse.m; sourceTree = "<group>"; };
-		766569F21C8F0B650016DFF1 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
-		766569F31C8F0B650016DFF1 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
 		76656A011C8F15470016DFF1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		76656A041C8F187A0016DFF1 /* CocoaAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocket.h; sourceTree = "<group>"; };
 		76656A061C8F187A0016DFF1 /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
@@ -116,8 +74,6 @@
 		76F115561C8EEFF000129D2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76F115581C8EEFF000129D2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		76F115591C8EEFF000129D2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		76F1155B1C8EEFF000129D2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		76F1155C1C8EEFF000129D2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		76F1155F1C8EEFF000129D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76F115611C8EEFF000129D2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76F115641C8EEFF000129D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -138,65 +94,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		766569D41C8F0B650016DFF1 /* GCDWebServer */ = {
-			isa = PBXGroup;
-			children = (
-				766569D51C8F0B650016DFF1 /* Core */,
-				766569E21C8F0B650016DFF1 /* Requests */,
-				766569EB1C8F0B650016DFF1 /* Responses */,
-			);
-			path = GCDWebServer;
-			sourceTree = "<group>";
-		};
-		766569D51C8F0B650016DFF1 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				766569D61C8F0B650016DFF1 /* GCDWebServer.h */,
-				766569D71C8F0B650016DFF1 /* GCDWebServer.m */,
-				766569D81C8F0B650016DFF1 /* GCDWebServerConnection.h */,
-				766569D91C8F0B650016DFF1 /* GCDWebServerConnection.m */,
-				766569DA1C8F0B650016DFF1 /* GCDWebServerFunctions.h */,
-				766569DB1C8F0B650016DFF1 /* GCDWebServerFunctions.m */,
-				766569DC1C8F0B650016DFF1 /* GCDWebServerHTTPStatusCodes.h */,
-				766569DD1C8F0B650016DFF1 /* GCDWebServerPrivate.h */,
-				766569DE1C8F0B650016DFF1 /* GCDWebServerRequest.h */,
-				766569DF1C8F0B650016DFF1 /* GCDWebServerRequest.m */,
-				766569E01C8F0B650016DFF1 /* GCDWebServerResponse.h */,
-				766569E11C8F0B650016DFF1 /* GCDWebServerResponse.m */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		766569E21C8F0B650016DFF1 /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				766569E31C8F0B650016DFF1 /* GCDWebServerDataRequest.h */,
-				766569E41C8F0B650016DFF1 /* GCDWebServerDataRequest.m */,
-				766569E51C8F0B650016DFF1 /* GCDWebServerFileRequest.h */,
-				766569E61C8F0B650016DFF1 /* GCDWebServerFileRequest.m */,
-				766569E71C8F0B650016DFF1 /* GCDWebServerMultiPartFormRequest.h */,
-				766569E81C8F0B650016DFF1 /* GCDWebServerMultiPartFormRequest.m */,
-				766569E91C8F0B650016DFF1 /* GCDWebServerURLEncodedFormRequest.h */,
-				766569EA1C8F0B650016DFF1 /* GCDWebServerURLEncodedFormRequest.m */,
-			);
-			path = Requests;
-			sourceTree = "<group>";
-		};
-		766569EB1C8F0B650016DFF1 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				766569EC1C8F0B650016DFF1 /* GCDWebServerDataResponse.h */,
-				766569ED1C8F0B650016DFF1 /* GCDWebServerDataResponse.m */,
-				766569EE1C8F0B650016DFF1 /* GCDWebServerErrorResponse.h */,
-				766569EF1C8F0B650016DFF1 /* GCDWebServerErrorResponse.m */,
-				766569F01C8F0B650016DFF1 /* GCDWebServerFileResponse.h */,
-				766569F11C8F0B650016DFF1 /* GCDWebServerFileResponse.m */,
-				766569F21C8F0B650016DFF1 /* GCDWebServerStreamedResponse.h */,
-				766569F31C8F0B650016DFF1 /* GCDWebServerStreamedResponse.m */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
 		76656A031C8F187A0016DFF1 /* CocoaAsyncSocket */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,8 +196,6 @@
 				76F115591C8EEFF000129D2A /* AppDelegate.m */,
 				7670A54A1C918D410023FFA9 /* DiscoveryService.h */,
 				7670A54B1C918D410023FFA9 /* DiscoveryService.m */,
-				76F1155B1C8EEFF000129D2A /* ViewController.h */,
-				76F1155C1C8EEFF000129D2A /* ViewController.m */,
 				7670A54D1C918F340023FFA9 /* LocationViewController.h */,
 				7670A54E1C918F340023FFA9 /* LocationViewController.m */,
 				76F1155E1C8EEFF000129D2A /* Main.storyboard */,
@@ -308,7 +203,6 @@
 				76F115631C8EEFF000129D2A /* LaunchScreen.storyboard */,
 				76F115661C8EEFF000129D2A /* Info.plist */,
 				76656A031C8F187A0016DFF1 /* CocoaAsyncSocket */,
-				766569D41C8F0B650016DFF1 /* GCDWebServer */,
 				76F115551C8EEFF000129D2A /* Supporting Files */,
 			);
 			path = GhostsInTheCity_Location;
@@ -396,36 +290,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76656A001C8F0B650016DFF1 /* GCDWebServerStreamedResponse.m in Sources */,
-				766569FB1C8F0B650016DFF1 /* GCDWebServerMultiPartFormRequest.m in Sources */,
 				76656A301C8F187A0016DFF1 /* DDFileLogger.m in Sources */,
-				766569FD1C8F0B650016DFF1 /* GCDWebServerDataResponse.m in Sources */,
-				766569FE1C8F0B650016DFF1 /* GCDWebServerErrorResponse.m in Sources */,
 				76656A2B1C8F187A0016DFF1 /* AsyncSocket.m in Sources */,
-				766569F41C8F0B650016DFF1 /* GCDWebServer.m in Sources */,
 				76656A281C8F187A0016DFF1 /* GCDAsyncSocket.m in Sources */,
-				766569FF1C8F0B650016DFF1 /* GCDWebServerFileResponse.m in Sources */,
-				76F1155D1C8EEFF000129D2A /* ViewController.m in Sources */,
-				766569F61C8F0B650016DFF1 /* GCDWebServerFunctions.m in Sources */,
 				76656A321C8F187A0016DFF1 /* DDTTYLogger.m in Sources */,
-				766569F81C8F0B650016DFF1 /* GCDWebServerResponse.m in Sources */,
 				76656A311C8F187A0016DFF1 /* DDLog.m in Sources */,
 				76656A2E1C8F187A0016DFF1 /* DDAbstractDatabaseLogger.m in Sources */,
 				76656A2C1C8F187A0016DFF1 /* AsyncUdpSocket.m in Sources */,
 				76656A291C8F187A0016DFF1 /* GCDAsyncUdpSocket.m in Sources */,
 				76656A2F1C8F187A0016DFF1 /* DDASLLogger.m in Sources */,
-				766569F51C8F0B650016DFF1 /* GCDWebServerConnection.m in Sources */,
 				7670A54F1C918F340023FFA9 /* LocationViewController.m in Sources */,
 				76656A331C8F187A0016DFF1 /* DDContextFilterLogFormatter.m in Sources */,
 				76656A341C8F187A0016DFF1 /* DDDispatchQueueLogFormatter.m in Sources */,
 				76F1155A1C8EEFF000129D2A /* AppDelegate.m in Sources */,
-				766569FC1C8F0B650016DFF1 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
-				766569FA1C8F0B650016DFF1 /* GCDWebServerFileRequest.m in Sources */,
 				76656A351C8F187A0016DFF1 /* DDMultiFormatter.m in Sources */,
 				7670A54C1C918D410023FFA9 /* DiscoveryService.m in Sources */,
-				766569F71C8F0B650016DFF1 /* GCDWebServerRequest.m in Sources */,
 				76F115571C8EEFF000129D2A /* main.m in Sources */,
-				766569F91C8F0B650016DFF1 /* GCDWebServerDataRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
